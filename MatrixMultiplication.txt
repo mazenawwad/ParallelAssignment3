@@ -3,7 +3,7 @@
 #define M 999
 #define N 999
 #define K 999
-//Sequential code, and values of M,N,K can be modified
+values of M,N,K can be modified
 // Kernel function to perform matrix multiplication
 __global__ void matrixMul(int *a, int *b, int *c, int m, int n, int k) {
     int row = blockIdx.y * blockDim.y + threadIdx.y;
